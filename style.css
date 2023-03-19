@@ -1,0 +1,83 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.divTitle {
+  height: 50vh;
+  background-color: rgb(100, 100, 100);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 900;
+  animation-name: exemplo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.divImgs {
+  color: #fff;
+  position: relative;
+}
+.divImgs > img {
+  width: 100%;
+}
+@keyframes exemplo {
+  from {
+    color: black;
+  }
+  to {
+    color: red;
+  }
+}
+.divImgs > p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  animation-name: exemplo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.imgBanners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 5%;
+}
+.ban {
+  display: flex;
+  flex-basis: calc(75% / 3);
+
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 23.3%;
+  margin: 10px;
+}
+.imgBan > img {
+  width: auto;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.textBan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .divTitle {
+    font-size: 4rem;
+  }
+  .textBan {
+    font-size: 2rem;
+  }
+  .ban {
+    height: 12rem;
+    flex-basis: calc(75% / 1);
+  }
+}
