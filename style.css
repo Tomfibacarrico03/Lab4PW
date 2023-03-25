@@ -4,9 +4,43 @@
   padding: 0;
   margin: 0;
 }
+nav {
+  background-color: #333;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: white;
+  color: #333;
+}
+
 .divTitle {
   height: 50vh;
-  background-color: rgb(100, 100, 100);
+  background-image: url("/capitais/lisboa.avif");
+  background-repeat: no-repeat;  
+  background-size:cover;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -23,6 +57,16 @@
 }
 .divImgs > img {
   width: 100%;
+}
+.poema{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+.poema p{
+  width:20%;
+
 }
 @keyframes exemplo {
   from {
@@ -70,6 +114,13 @@
   padding: 20px;
 }
 @media only screen and (max-width: 991px) {
+  nav {
+    height: fit-content;
+    font-size:50px;
+  }
+  ul{
+    flex-direction:column;
+  }
   .divTitle {
     font-size: 4rem;
   }
